@@ -1,127 +1,91 @@
-# Frontend Mentor - Four card feature section solution
+# Frontend Mentor - Four card feature section
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
-## Table of contents
+## Welcome! 👋
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+Thanks for checking out this front-end coding challenge.
 
-## Overview
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-### The challenge
+**To do this challenge, you need a basic understanding of HTML and CSS.**
 
-Users should be able to:
+## The challenge
+
+Your challenge is to build out this feature section and get it looking as close to the design as possible.
+
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+Your users should:
 
 - View the optimal layout for the site depending on their device's screen size
 
-### Screenshot
+Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
-![](./screenshot.png)
+## Where to find everything
 
-### Links
+Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
-## My process
+If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
-### Built with
+You will find all the required assets in the `/images` folder. The assets are already optimized.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- CSS Grid
-- Mobile-first workflow
+There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-### What I learned
+## Building your project
 
-in this project i try to implementing semantic HTML specially to card component. in this project i'm using unorder list or (<ul></ul> tag) for listing all the project data points. i'm using list because based on english dictionary list is a record of short pieces of information, so because all the project data points in this project have short pieces of information i decided to use <ul></ul> tag.
+Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
 
-```html
-  <ul class="cards">
-      <li class="card">
-        <h2>Supervisor</h2>
-        <p>Monitor activity to identify project roadblocks</p>
-        <img src="./images/icon-supervisor.svg" alt="supervisor icon">
-      </li>
-      <li>
-        <ul class="middleCards">
-          <li class="card">
-            <h2>Team Builder</h2>
-            <p>Scans our talent network to create the optimal team for your project</p>
-            <img src="./images/icon-team-builder.svg" alt="team builder icon">
-          </li>
-          <li class="card">
-            <h2>Karma</h2>
-            <p>Regularly evaluates our talent to ensure quality</p>
-            <img src="./images/icon-karma.svg" alt="karma icon">
-          </li>  
-        </ul>
-      </li>
-      <li class="card">
-        <h2>Calculator</h2>
-        <p>Uses data from past projects to provide better delivery estimates</p>
-        <img src="./images/icon-calculator.svg" alt="calculator icon">
-      </li>
-  </ul>
-```
-```css
-//using pseudoclass for make unique card border color
-.cards > .card:nth-child(1){
-    border-top: 4px solid hsl(180, 62%, 55%);
-}
+1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
+2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
+3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
+4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
+5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
+6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
-.cards > .card:nth-child(3){
-    border-top: 4px solid hsl(212, 86%, 64%);
-}
+## Deploying your project
 
-.middleCards > .card:nth-child(1){
-    border-top: 4px solid hsl(0, 78%, 62%);
-}
-.middleCards > .card:nth-child(2){
-    border-top: 4px solid hsl(34, 97%, 64%);
-}
+As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
 
-//using @media rule for implementing responsive design
-@media (max-width: 900px){
-   main{
-    width:90%;
-    padding:10px;
-   }
-   .cards{
-    grid-template-columns: repeat(1, 1fr);
-   }
-   .card{
-    width:100%;
-   }
-   .definition{
-    width:100%;    
-   }
-   .middleCards{
-    grid-template-columns: repeat(1, 1fr);
-   }
-}   
-```
+- [GitHub Pages](https://pages.github.com/)
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
 
-### Continued development
-In future project i want to more often implement semantic HTML for making my code easily to read.
+You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-### Useful resources
+## Create a custom `README.md`
 
-- [w3schools](https://www.w3schools.com) - This helped me for learning how to use css for responsive user interface. I really liked this pattern and will use it going forward.
-- [stackoverflow](https://www.stackoverflow.com) - This is an amazing article which helped me finally understand simillar problem and how to solved it.
-- [vscodeagent] - this really help me for completing this project faster.
+We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
 
+The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-## Author
-- Frontend Mentor - [@abdisavia](https://www.frontendmentor.io/profile/abdisavia)
-- Instagram - [@abdisavia_](https://www.twitter.com/abdisavia_)
+Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
 
+## Submitting your solution
+
+Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+
+Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+
+## Sharing your solution
+
+There are multiple places you can share your solution:
+
+1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
+2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
+3. Share your solution on other social channels like LinkedIn.
+4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+
+We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+
+The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+
+## Got feedback for us?
+
+We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+
+This challenge is completely free. Please share it with anyone who will find it useful for practice.
+
+**Have fun building!** 🚀
