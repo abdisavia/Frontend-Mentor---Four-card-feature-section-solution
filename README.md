@@ -42,7 +42,7 @@ Users should be able to:
 
 ### What I learned
 
-in this project i try to implementing semantic HTML specially to card component. in this project i'm using unorder list or (<ul></ul> tag) for listing all the project data points. i'm using list because based on english dictionary list is a record of short pieces of information, so because all the project data points in this project have short pieces of information i decided to use <ul></ul> tag.
+in this project i try to implementing semantic HTML specially to card component. in this project i'm using unorder list or (`<ul></ul>` tag) for listing all the project data points. i'm using list because based on english dictionary list is a record of short pieces of information, so because all the project data points in this project have short pieces of information i decided to use `<ul></ul>` tag.
 
 ```html
   <ul class="cards">
